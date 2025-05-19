@@ -13,7 +13,7 @@ export default class Hyperlink extends Field{
 	convert(elEnd){
 		var a=this.doc.createElement('a')
 		a.href=getLink()
-		elEnd.id=this.doc.uid()
+		elEnd.id='';//this.doc.uid()
 		
 		var current=this.elStart, parent=current.parentNode
 		while(!parent.querySelector('#'+elEnd.id)){
