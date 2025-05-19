@@ -6,10 +6,13 @@ function uptrim(el){
 	if(parent.childNodes.length==0)
 		uptrim(parent)
 }
+function getLink(){
+	return '';
+}
 export default class Hyperlink extends Field{
 	convert(elEnd){
 		var a=this.doc.createElement('a')
-		a.href=this.wordModel.getLink()
+		a.href=getLink()
 		elEnd.id=this.doc.uid()
 		
 		var current=this.elStart, parent=current.parentNode
