@@ -12,7 +12,7 @@ function asStyle(x){
 	return a.join(';')
 }
 
-export default class Shape extends Converter{
+export default class shape extends Converter{
 	get tag(){return 'div'}
 	
 	convertStyle(el){
@@ -56,7 +56,7 @@ export default class Shape extends Converter{
 	}
 }
 
-Shape.Properties=class Properties extends Style.Properties{
+shape.Properties=class Properties extends Style.Properties{
 	constructor(style,parent, pathStyle, bgStyle){
 		super(...arguments)
 		this.pathStyle=pathStyle

@@ -1,5 +1,5 @@
-import Shape from './shape'
+import shape from './shape'
 
-export default class Textbox extends Shape{
+export default class Textbox extends shape{
 
 }
